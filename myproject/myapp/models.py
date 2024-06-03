@@ -23,7 +23,7 @@ class student(models.Model):
     studentemail=models.EmailField(unique=True)
     studentage=models.CharField(max_length=10)
     student_address=models.CharField(max_length=100)
-
+    
     def __str__(self) -> str:
         return self.studentname
     
